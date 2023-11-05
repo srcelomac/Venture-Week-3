@@ -71,7 +71,7 @@ void graph_traversal(int t, int v, vector <int> visited_v, vector <int> dots_cnt
     if (t >= 180) return;
     else {
         for (auto c: g[v]) {
-            if (dots_cnt[c] > 10) return;
+            if (dots_cnt[c] > 10) return;    //См.Приложение
             dots_cnt[c]++;
             int updated_time = t + times[v][c];
             vector <int> updated_visited;
